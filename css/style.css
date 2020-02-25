@@ -1,0 +1,921 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Galada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Galada', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+    cursor: pointer;
+}
+input,
+button,
+button:focus,
+input:focus,
+input:hover,
+button:hover {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*=============
+    navbar css start
+============*/
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    padding: 0 28px;
+    color: #444;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: #444;
+}
+
+.navbar .login {
+    margin-left: 10px;
+}
+
+.navbar .login a {
+    color: #fff;
+    background: #444;
+    font-size: 20px;
+    padding: 40px 27px;
+    display: inline-block;
+}
+.navbar.sticky .login a {
+	padding: 20px !important;
+}
+/*Css for sticky menu */
+
+.navbar.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 9999999;
+	border-bottom: 1px solid #cecece;
+	-webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+	box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+	-webkit-animation: sticky 2s;
+	animation: sticky 2s;
+}
+
+/*For Animation*/
+@-webkit-keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+/*=============
+    navbar css end
+============*/
+/*=============
+    quickbooking css start
+============*/
+#quickbooking {
+    background: url(../images/booking-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 180px 0;
+}
+
+.booking-area {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin: 0 -20px;
+    border-radius: 5px;
+}
+
+#quickbooking .booking-wrapper {
+    background: #fff;
+    padding: 35px 15px;
+    margin: 0 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#quickbooking .booking-content input {
+	width: 100%;
+	height: 50px;
+	padding: 0 75px;
+	border: 1px solid #dddddd;
+	background: no-repeat;
+	border-radius: 5px;
+	text-align: left;
+	font-size: 16px;
+}
+
+#quickbooking .booking-content {
+    position: relative;
+}
+
+#quickbooking .booking-content .book-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 49px;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #dddddd;
+}
+
+#quickbooking .booking-content .down {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#quickbooking .booking-content .down i {
+    font-size: 20px;
+    color: #999999;
+}
+#quickbooking .booking-btn {
+	margin-top: 30px;
+}
+
+#quickbooking .booking-btn button {
+	color: #fff;
+	font-size: 20px;
+	background: #333333;
+	width: 100%;
+	height: 60px;
+	border: 1px solid #333;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+
+#quickbooking .booking-btn button i {
+    margin-left: 10px;
+}
+
+/*=================
+    date picker
+==================*/
+.input_holder {
+	position: relative;
+}
+.location_icon.last_border {
+	position: absolute;
+	background: transparent;
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+	border-right: 1px solid #ddd;
+}
+#date_picker_input {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 12px 0;
+	padding-left: 76px;
+}
+.input_holder.J-datepicker {
+	position: relative;
+}
+
+.input_holder.J-datepicker .date_time {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-align: left;
+	padding-left: 76px;
+	font-size: 16px;
+}
+
+.perfect-datetimepicker{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.banner_continue_btn span {
+  transition: all linear 0.2s;
+}
+
+.datePicker{
+    position: absolute;
+    width: 365px;
+    right: 0;
+    top: 100%;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 99;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
+    display: none;
+    padding-top: 15px;
+    
+}
+
+.datePickers{
+  position: absolute;
+  width: 365px;
+  right: 0;
+  top: 0;
+  border-radius: 5px;
+  background: #fff;
+  z-index: 99;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
+  display: none;
+  
+}
+
+.datePickers .calender_time h3{
+  padding: 3px 0;
+}
+
+.pageTwo .calender_time h3{
+  padding: 3px 0;
+}
+
+.returnBook{
+  display: none;
+}
+
+
+.choose{
+    padding: 20px 5px;
+    text-align: left;
+}
+
+.choose button{
+    border: 0;
+    background: #ddd;
+    font-family: 'open sans',sans-serif;
+    font-size: 18px;
+    padding: 12px 40px;
+    margin: 0 15px;
+    color: #222;
+    border-radius: 5px;
+}
+
+#later_btn{
+    background: #009FE3;
+    color: #fff;
+}
+
+.timing_part{
+    background: #FAFAFA;
+    border-top: 1px solid #ddd;
+}
+
+.calender_time{
+    padding: 4px 5px;
+    box-sizing: border-box;
+    transform: translateY(-15px);
+    width: 100px;
+    float: right;
+}
+
+.calender_time ul li{
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+#hour_box,
+#minBox{
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#date-text2,
+#date-text3{
+    height: 1px;
+    background: green;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+    bottom: 0;
+}
+
+
+#demo2{
+    transform: translateY(-39px);
+    width: 260px;
+    float: left;
+    z-index: 999;
+    margin-top: 24px;
+}
+
+#demo3{
+  transform: translateY(-39px);
+  width: 260px;
+  float: left;
+  z-index: 999;
+  margin-top: 24px;
+}
+
+.returnDate{
+  display: none;
+}
+
+.perfect-datetimepicker *{
+    line-height: 26px;
+}
+.perfect-datetimepicker table td{
+    border: 1px solid #ddd;
+}
+
+.calender_time h3 {
+	color: #333;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 22px;
+	padding: 10px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.calender_time .d-flex button {
+	width: 100%;
+	padding: 5px 0;
+	background: transparent;
+	border: 1px solid #ddd;
+	background: #333;
+	color: #fff;
+}
+
+.calender_time .d-flex{
+  flex-direction: column;
+}
+
+#cancel_btn{
+    background: #707070;
+    border: 0;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#cancel_btn:hover{
+    background: #FA4832;
+}
+
+#cancel_btns{
+  background: #707070;
+  border: 0;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#cancel_btns:hover{
+  background: #FA4832;
+}
+
+#ok_btn {
+	background: #323232;
+	border: 0;
+	padding: 6px 33px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+#ok_btns{
+  background: #043F9A;
+border: 0;
+padding: 6px 33px;
+color: #fff;
+border-radius: 5px;
+font-size: 18px;
+}
+.ok{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.okCancel{
+  text-align: center;
+
+transform: translateY(-21px);
+}
+
+
+.mt{
+    display: none !important;
+}
+
+.title{
+    pointer-events: none;
+}
+#asap_btn:hover{
+    background: #009FE3;
+    color: #fff;
+}
+
+.clear{
+    display: none;
+}
+.perfect-datetimepicker tbody td.today {
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #828282;
+	background-color: #828282;
+}
+.perfect-datetimepicker tbody td.selected {
+	border: 1px solid #333;
+	background-color: #333;
+}
+
+
+/*=============
+    quickbooking css end
+============*/
+/*=============
+    suggetion css start
+============*/
+.suggest_list {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	display: none;
+	z-index: 9999;
+}
+
+.suggest_list.suggetion_active {
+    display: block;
+}
+
+.down .down_btn {
+    background: transparent;
+    border: none;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.down_btn i {
+    transition: all .3s linear;
+}
+
+.down_btn.rotate_btn i {
+    transform: rotate(180deg);
+}
+
+.suggest_list ul {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.suggest_list ul li a {
+    display: block;
+    padding: 8px;
+    color: #444;
+}
+
+.suggest_lists {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	display: none;
+	z-index: 9999;
+}
+
+.suggest_lists.suggetion_actives {
+    display: block;
+}
+
+.down .down_btns {
+    background: transparent;
+    border: none;
+    width: 100%;
+    position: relative;
+    z-index: 99999;
+}
+
+.down_btns i {
+    transition: all .3s linear;
+}
+
+.down_btns.rotate_btns i {
+    transform: rotate(180deg);
+}
+
+.suggest_lists ul {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.suggest_lists ul li a {
+    display: block;
+    padding: 8px;
+    color: #444;
+}
+
+/*=============
+    suggetion css end
+============*/
+/*=============
+    section-title css start
+============*/
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+.section-title p {
+    color: #b9b9b9;
+}
+
+/*=============
+    section-title css end
+============*/
+/*=============
+    service-part css start
+============*/
+#service-part {
+    padding: 100px 0;
+}
+
+#service-part .single-service {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    line-height: 150px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+}
+
+#service-part .single-service.f-right {
+    float: right;
+}
+
+#service-part .single-service.f-center {
+    margin: 0 auto;
+    position: relative;
+}
+
+#service-part .single-service.f-center:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -110px;
+    width: 90px;
+    height: 1px;
+    background: #eaeaea;
+    transform: translateY(-50%);
+}
+
+#service-part .single-service.f-center:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -110px;
+    width: 90px;
+    height: 1px;
+    background: #eaeaea;
+    transform: translateY(-50%);
+}
+
+#service-part .service-text {
+    padding: 50px 50px;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+#service-part .service-text p {
+    line-height: 26px;
+}
+
+/*=============
+    service-part css end
+============*/
+
+#car-part {
+    background:
+        #f8f8f8;
+    padding: 55px 0 60px;
+}
+
+#car-part .section-title {
+    margin-bottom: 35px;
+}
+
+#nav-tab.nav-tabs {
+    border: 1px solid #dddddd;
+    border-radius: 35px;
+    justify-content: center;
+}
+
+#nav-tab.nav-tabs .nav-link {
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 15px 0;
+    margin: 0 25px;
+    font-size: 20px;
+    color: #444;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-bottom: 3px solid #444444 !important;
+
+}
+
+.tab-img {
+    margin: 60px 0 30px;
+}
+
+.passenger {
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.passenger p {
+    font-size: 20px;
+    color: #999999;
+    padding-left: 70px;
+}
+
+.passen-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background:
+        #333;
+    text-align: center;
+    line-height: 50px;
+}
+/* slide buttons */
+.slider_tab {
+	position: relative;
+}
+.slide-buttons button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #383838;
+    background: transparent;
+    color: #383838;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%) ;
+    -ms-transform: translateY(-50%) ;
+    -o-transform: translateY(-50%) ;
+}
+.slide-buttons .left_arrow{
+    left: 15px;
+    z-index: 9999;
+}
+.slide-buttons .right_arrow{
+    right: 15px;
+    z-index: 9999;
+}
+/*=================
+    sm-carpart css
+=================*/
+#sm-carpart {
+    background: #f8f8f8;
+}
+
+.car-btn span {
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 3px solid #444;
+}
+
+.car-btn {
+    text-align: center;
+    width: 150px;
+    height: 52px;
+    border: 1px solid #444;
+    line-height: 49px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.pass-wrapper {
+    display: flex;
+}
+
+.pass-wrapper .passenger {
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 32px -10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.pass-wrapper .passenger p {
+    font-size: 16px;
+    padding-left: 58px;
+}
+
+.passen-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    background: #333;
+    text-align: center;
+    line-height: 45px;
+}
+
+.passenger.mr {
+    margin-right: 10px;
+}
+
+/*=================
+    sm-carpart css
+=================*/
+/*footer css start*/
+#footer-part {
+    background: url(../images/footer-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer-widget ul li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-widget ul li {
+    margin-bottom: 20px;
+}
+
+#footer-part {
+    padding: 55px 0 35px;
+}
+
+.footer-widget ul li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-logo {
+    margin-top: 30px;
+}
+
+
+#coyright-part {
+	background: #222222;
+	padding: 14px 0;
+}
+
+.reserved p {
+    color: #ffff;
+    font-size: 15px;
+}
+
+.footer-icon a {
+    color: #ffffff;
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================
+		 banner part css
+===================================*/
+/* .datePicker */

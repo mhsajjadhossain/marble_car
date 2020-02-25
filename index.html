@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marble Cars</title>
+
+    <!--necessary css files-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--=============
+        navbar start
+    =============-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Airport Transfers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">London Sightseeing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business Accounts</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Login button -->
+            <div class="login">
+                <a href="#">Login / Signup</a>
+            </div>
+        </div>
+    </nav>
+    <!--=============
+        navbar end
+    =============-->
+    <!--=============
+        quickbooking start
+    =============-->
+    <section id="quickbooking">
+        <div class="container">
+            <form class="booking-area">
+                <div class="row booking-wrapper">
+                    <div class="col-lg-4">
+                        <div class="booking-content">
+                            <input type="text" class="pickadd" placeholder="Pickup Address">
+                            <div class="book-img">
+                                <img src="images/location.png" alt="location">
+                            </div>
+                            <div class="down">
+                                <button type="button" class="down_btn">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="suggest_list">
+                                <ul>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-lg-0">
+                        <div class="booking-content">
+                            <input type="text" class="pickadds" placeholder="Destination Address">
+                            <div class="book-img">
+                                <img src="images/adress.png" alt="adress">
+                            </div>
+                            <div class="down">
+                                <button type="button" class="down_btns">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="suggest_lists">
+                                <ul>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                    <li><a href="#">Suggetion 01</a></li>
+                                    <li><a href="#">Suggetion 02</a></li>
+                                    <li><a href="#">Suggetion 03</a></li>
+                                    <li><a href="#">Suggetion 04</a></li>
+                                    <li><a href="#">Suggetion 05</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+
+                        <div class="input_holder"></div>
+                        <span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
+
+                        <input id="date_picker_input" class="input_fields date_time" readonly type="text"
+                            placeholder="Date Time">
+
+                        <div class="datePicker">
+                            <div class="later_part">
+
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <span id="date-text2"></span>
+                                        <div id="demo2"></div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="calender_time">
+                                            <ul>
+                                                
+                                                <li class="d-flex">
+                                                    <h3>Hour</h3>
+                                                    <button id="h_up" type="button"><i class="fas fa-angle-up"></i></button>
+                                                    <h4 id="hour_box">0</h4>
+                                                    <button id="h_down" type="button"><i class="fas fa-angle-down"></i></button>
+        
+                                                </li>
+        
+                                                
+                                                <li class="d-flex">
+                                                    <h3 class="mt-2">Minute</h3>
+                                                    <button id="m_up" type="button"><i class="fas fa-angle-up"></i></button>
+                                                    <h4 id="minBox">0</h4>
+                                                    <button id="m_down" type="button"><i class="fas fa-angle-down"></i></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="clr"></div>
+                                <div class="okCancel">
+                                    <button id="ok_btn" type="button">Ok</button>
+                                    <button id="cancel_btn" type="button">Cencel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-12 px-res">
+                    <div class="booking-btn">
+                        <button type="submit">Continue <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+    <!--=============
+        quickbooking end
+    =============-->
+    <!--=============
+        service-part start
+    =============-->
+    <section id="service-part">
+        <div class="container">
+            <div class="section-title">
+                <h2>Airport Transfers</h2>
+                <p>Executive minicab service</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-4">
+                    <div class="single-service float-lg-right">
+                        <img src="images/phone.png" alt="phone">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="single-service f-center">
+                        <img src="images/car.png" alt="car">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="single-service float-lg-left float-right">
+                        <img src="images/plane.png" alt="plane">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 p-lg-0">
+                    <div class="service-text">
+                        <p>As a traveler if you are in London or preparing to come to London then you needs Marble Car’s
+                            best taxi service in London for your London airport transfer. Marble Car offers the finest
+                            London airport taxi solution for your far better London airport transfer. <span>Marble Car
+                                is the ideal taxi service in London that will certainly deal with your London airport
+                                transfer to your final destination area. The rate of the London airport transfer depends
+                                on the range of the location from the London airport terminal, traffic that is taking
+                                place on the day of your trip.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============
+        service-part end
+    =============-->
+    <!--=============
+        car-part start
+    =============-->
+    <section id="car-part">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Cars</h2>
+                <p>Executive minicab service</p>
+            </div>
+            <div class="car-tabs d-none d-md-block">
+                <div class="row  mx-0">
+                    <div class="col-lg-8 offset-lg-2">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-Executive-tab" data-toggle="tab"
+                                    href="#nav-Executive" role="tab" aria-controls="nav-Executive"
+                                    aria-selected="true">Executive</a>
+
+                                <a class="nav-item nav-link" id="nav-Large-tab" data-toggle="tab" href="#nav-Large"
+                                    role="tab" aria-controls="nav-Large" aria-selected="false">Large People Carrier</a>
+
+                                <a class="nav-item nav-link" id="nav-People-tab" data-toggle="tab" href="#nav-People"
+                                    role="tab" aria-controls="nav-People" aria-selected="false">People Carrier </a>
+
+                                <a class="nav-item nav-link" id="nav-Standard-tab" data-toggle="tab"
+                                    href="#nav-Standard" role="tab" aria-controls="nav-Standard"
+                                    aria-selected="false">Standard</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="tab-content car-active" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-Executive" role="tabpanel"
+                        aria-labelledby="nav-Executive-tab">
+                        <div class="row mx-0">
+                            <div class="col-lg-12">
+                                <!-- tab content -->
+                                <div class="tab-img text-center">
+                                    <img src="images/black-car.png" alt="black-car">
+                                </div>
+                                <!-- tab content -->
+                            </div>
+                        </div>
+                        <div class="row mx-0">
+                            <div class="col-lg-6 col-md-6  pr-lg-0">
+                                <div class="passenger float-right">
+                                    <p>Pasenger - 4</p>
+                                    <div class="passen-img">
+                                        <img src="images/passenger.png" alt="passenger">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="passenger">
+                                    <p>Luggage - 1</p>
+                                    <div class="passen-img">
+                                        <img src="images/luagge.png" alt="luagge">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-Large" role="tabpanel" aria-labelledby="nav-Large-tab">
+                        <div class="row mx-0">
+                            <div class="col-lg-12">
+                                <div class="tab-img text-center">
+                                    <img src="images/3rd.png" alt="black-car">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0">
+                            <div class="col-lg-6 col-md-6 pr-lg-0">
+                                <div class="passenger float-right">
+                                    <p>Pasenger - 50</p>
+                                    <div class="passen-img">
+                                        <img src="images/passenger.png" alt="passenger">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="passenger">
+                                    <p>Luggage - 25</p>
+                                    <div class="passen-img">
+                                        <img src="images/luagge.png" alt="luagge">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-People" role="tabpanel" aria-labelledby="nav-People-tab">
+                        <div class="row mx-0">
+                            <div class="col-lg-12">
+                                <div class="tab-img text-center">
+                                    <img src="images/2nd.png" alt="black-car">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0">
+                            <div class="col-lg-6 col-md-6 pr-lg-0">
+                                <div class="passenger float-right">
+                                    <p>Pasenger - 25</p>
+                                    <div class="passen-img">
+                                        <img src="images/passenger.png" alt="passenger">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="passenger">
+                                    <p>Luggage - 12</p>
+                                    <div class="passen-img">
+                                        <img src="images/luagge.png" alt="luagge">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-Standard" role="tabpanel" aria-labelledby="nav-Standard-tab">
+                        <div class="row mx-0">
+                            <div class="col-lg-12">
+                                <div class="tab-img text-center">
+                                    <img src="images/black-car.png" alt="black-car">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0">
+                            <div class="col-lg-6 col-md-6 pr-lg-0">
+                                <div class="passenger float-right">
+                                    <p>Pasenger - 8</p>
+                                    <div class="passen-img">
+                                        <img src="images/passenger.png" alt="passenger">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="passenger">
+                                    <p>Luggage - 4</p>
+                                    <div class="passen-img">
+                                        <img src="images/luagge.png" alt="luagge">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- slider tab area -->
+            <div class="slider_tab d-block d-md-none">
+                <!-- slider button -->
+                <div class="slide-buttons">
+                    <button class="left_arrow">
+                        <i class="fa fa-angle-left"></i>
+                    </button>
+                    <button class="right_arrow">
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+                <!-- slider button -->
+
+
+
+                <div class="tab_slide_active">
+                    <div class="single_tab_slide">
+
+                        <div class="slide_heading text-center">
+                            <h3>Exclusive</h3>
+                        </div>
+
+
+                        <img src="images/black-car.png" alt="">
+
+                        <div class="row mx-0 mt-3">
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/passenger.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Pasenger - 4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/luagge.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Luggage - 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="single_tab_slide">
+
+                        <div class="slide_heading text-center">
+                            <h3>Large People Carrier</h3>
+                        </div>
+
+
+                        <img src="images/3rd.png" alt="">
+
+                        <div class="row mx-0 mt-3">
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/passenger.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Pasenger - 4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/luagge.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Luggage - 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="single_tab_slide">
+
+                        <div class="slide_heading text-center">
+                            <h3>People Carrier</h3>
+                        </div>
+
+
+                        <img src="images/2nd.png" alt="">
+
+                        <div class="row mx-0 mt-3">
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/passenger.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Pasenger - 4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/luagge.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Luggage - 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single_tab_slide">
+
+                        <div class="slide_heading text-center">
+                            <h3>Standard</h3>
+                        </div>
+
+
+                        <img src="images/4th.png" alt="">
+
+                        <div class="row mx-0 mt-3">
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/passenger.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Pasenger - 4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="slide_passenger pr-15">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="pass_img">
+                                                <img src="images/luagge.png" alt="passenger">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="slide_text">
+                                                <p>Luggage - 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============
+        car-part end
+    =============-->
+    <!--=============
+        footer-part start
+    =============-->
+    <section id="footer-part">
+        <div class="border_f d-block d-lg-none"></div>
+        <div class="container">
+            <div class="bd_wrap">
+                <div class="row">
+                    <div class="col-lg col-md-12">
+                        <div class="footer-logo text-center text-lg-left">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-6 mt-5 mt-md-none mt-lg-0 mt-30">
+                        <div class="footer-widget pb-re">
+                            <ul>
+                                <li><a href="#">About </a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-6 mt-5 mt-md-none mt-lg-0 mt-30">
+                        <div class="footer-widget no-after">
+                            <ul>
+                                <li><a href="#">Heathrow Airport Transfers</a></li>
+                                <li><a href="#">Gatwick Airport Transfers </a></li>
+                                <li><a href="#">Stand Airport Transfer </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="bdr d-block d-md-none"></span>
+                    <div class="col-lg col-md-3 col-6 mt-lg-0 mt-30">
+                        <div class="footer-widget">
+                            <ul>
+                                <li><a href="#">Hotel Partnership</a></li>
+                                <li><a href="#">Travel Agent Account</a></li>
+                                <li><a href="#">Corporate Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-6 mt-lg-0 mt-30 no">
+                        <div class="footer-widget no-after">
+                            <ul>
+                                <li><a href="#">Service Areas </a></li>
+                                <li><a href="#">Partner Login </a></li>
+                                <li><a href="#">Become a Driver</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============
+        footer-part end
+    =============-->
+    <!--=============
+        coyright-part start
+    =============-->
+    <section id="coyright-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-lg-6">
+                    <div class="reserved">
+                        <p>Copyright 2020. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-6">
+                    <div class="footer-icon text-right">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============
+        coyright-part end
+    =============-->
+
+
+
+
+
+
+    <!-- necessary javascrpt files -->
+    <script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
