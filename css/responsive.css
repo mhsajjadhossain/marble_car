@@ -421,15 +421,23 @@
     }
     .calender_time ul li {
         float: left;
-        width: 40%;
+        width: 43%;
         margin: 0 15px;
+    }
+    .calender_time ul li:last-child {
+        margin-right: -15px;
     }
     .calender_time .d-flex h3 {
         margin-top: 8px;
     }
-
+    #demo2 {
+        width: 100%;
+    }
     .perfect-datetimepicker {
-        width: 120%;
+        width: 100%;
+    }
+    .perfect-datetimepicker {
+        padding: 0 23px;
     }
     #navbarSupportedContent {
         position: absolute;
@@ -441,7 +449,9 @@
         border-bottom: 1px solid #444;
         z-index: 9999;
     }
-
+    .calender_time {
+        padding: 0 15px;
+    }
     .navbar .navbar-nav .nav-item .nav-link {
         padding: 10px 28px;
     }
