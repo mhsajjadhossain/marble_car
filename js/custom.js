@@ -19,6 +19,15 @@ $(function () {
     });
 
 
+    $('.date_time').on('click', function () {
+        $('.cal_down_btns').toggleClass('rotate_btn');
+    });
+    $('.cal_down_btns').on('click', function () {
+        $('.datePicker').hide();
+        $('.cal_down_btns').toggleClass('rotate_btn');
+    });
+
+
     $('.pickadd').keydown(function () {
         $('.suggest_list').addClass('suggetion_active');
         $('.down_btn').addClass('rotate_btn');
