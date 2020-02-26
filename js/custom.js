@@ -83,6 +83,7 @@ $(function () {
 
 
           })
+          
     
             
             function logEvent(type, date) {
@@ -96,7 +97,7 @@ $(function () {
         
             $('#demo2').datetimepicker({
                 date: new Date(),
-                dateFormat: 'd M, y',
+                dateFormat: 'd, m, y',
                 CustomFormat: 'DD/MM/YYYY',
                 onDateChange: function(){
                     $('#date-text2').text(this.getText());
@@ -106,7 +107,7 @@ $(function () {
 
             $('#demo3').datetimepicker({
                 date: new Date(),
-                dateFormat: 'd M, y',
+                dateFormat: 'd, m, y',
                 CustomFormat :'DD/MM/YYYY',
                 onDateChange: function(){
                     $('#date-text3').text(this.getText());

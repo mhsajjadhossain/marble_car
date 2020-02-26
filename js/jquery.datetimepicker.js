@@ -996,7 +996,7 @@
             }
         };
         picker.getText = function (format) {
-            return utilsDate2str(this.getValue(), format ? format : 'YYYY/MM/DD HH:mm:ss');
+            return utilsDate2str(this.getValue(), format ? format : 'DD/MM/YYYY HH:mm:ss');
         };
         picker.destroy = function () {
             this.element.removeData('datetimepicker');
