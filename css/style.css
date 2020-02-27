@@ -12,7 +12,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #444;
-    overflow-x: hidden;
 }
 
 h1,
@@ -39,9 +38,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .form-control:focus {
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
+
 a,
 a:hover {
     text-decoration: none;
@@ -51,17 +52,18 @@ button:focus {
     outline: 0;
     cursor: pointer;
 }
+
 input,
 button,
 button:focus,
 input:focus,
 input:hover,
 button:hover {
-  outline: 0;
-  box-shadow: 0 0 0 0 transparent;
-  border-radius: 0;
-  margin: 0;
-  padding: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -69,9 +71,6 @@ button:hover {
 /*=============
     navbar css start
 ============*/
-.navbar {
-    padding: 0;
-}
 
 .navbar .navbar-nav .nav-item .nav-link {
     font-size: 20px;
@@ -94,43 +93,47 @@ button:hover {
     padding: 20px 27px;
     display: inline-block;
 }
+
 .navbar.sticky .login a {
-	padding: 20px !important;
+    padding: 20px !important;
 }
+
 /*Css for sticky menu */
 
 .navbar.sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #fff;
-	z-index: 9999999;
-	border-bottom: 1px solid #cecece;
-	-webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
-	box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
-	-webkit-animation: sticky 2s;
-	animation: sticky 2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9999999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    -webkit-animation: sticky 2s;
+    animation: sticky 2s;
 }
 
 /*For Animation*/
 @-webkit-keyframes sticky {
-    0%{
+    0% {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%)
     }
-    100%{
+
+    100% {
         -webkit-transform: translateY(0%);
         transform: translateY(0%)
     }
 }
 
 @keyframes sticky {
-    0%{
+    0% {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%)
     }
-    100%{
+
+    100% {
         -webkit-transform: translateY(0%);
         transform: translateY(0%)
     }
@@ -151,7 +154,6 @@ button:hover {
 .booking-area {
     background: rgba(255, 255, 255, 0.6);
     padding: 20px;
-    margin: 0 -20px;
     border-radius: 5px;
 }
 
@@ -164,14 +166,14 @@ button:hover {
 }
 
 #quickbooking .booking-content input {
-	width: 100%;
-	height: 50px;
-	padding: 0 75px;
-	border: 1px solid #dddddd;
-	background: no-repeat;
-	border-radius: 5px;
-	text-align: left;
-	font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding: 0 75px;
+    border: 1px solid #dddddd;
+    background: no-repeat;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
 }
 
 #quickbooking .booking-content {
@@ -200,6 +202,7 @@ button:hover {
     line-height: 50px;
     cursor: pointer;
 }
+
 .cal_down {
     position: absolute;
     right: 15px;
@@ -207,34 +210,37 @@ button:hover {
     width: 50px;
     height: 50px;
 }
+
 .cal_down button {
-	background: transparent;
-	border: 0;
-	font-size: 20px;
-	color: #888;
-	height: 100%;
-	width: 50px;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #888;
+    height: 100%;
+    width: 50px;
     text-align: center;
     line-height: 50px;
 }
+
 #quickbooking .booking-content .down i {
     font-size: 20px;
     color: #999999;
 }
+
 #quickbooking .booking-btn {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 #quickbooking .booking-btn button {
-	color: #fff;
-	font-size: 20px;
-	background: #333333;
-	width: 100%;
-	height: 60px;
-	border: 1px solid #333;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    background: #333333;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
 }
 
 #quickbooking .booking-btn button i {
@@ -246,49 +252,54 @@ button:hover {
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
 }
-#quickbooking .booking-btn button:hover i{
+
+#quickbooking .booking-btn button:hover i {
     margin-left: 10px;
     opacity: 1;
 }
+
 /*=================
     date picker
 ==================*/
 .input_holder {
-	position: relative;
+    position: relative;
 }
+
 .location_icon.last_border {
-	position: absolute;
-	background: transparent;
-	display: block;
-	width: 50px;
-	height: 50px;
-	font-size: 24px;
-	text-align: center;
-	line-height: 50px;
-	border-right: 1px solid #ddd;
+    position: absolute;
+    background: transparent;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #ddd;
 }
+
 #date_picker_input {
-	width: 100%;
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 12px 0;
-	padding-left: 76px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 12px 0;
+    padding-left: 76px;
 }
+
 .input_holder.J-datepicker {
-	position: relative;
+    position: relative;
 }
 
 .input_holder.J-datepicker .date_time {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	text-align: left;
-	padding-left: 76px;
-	font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 76px;
+    font-size: 16px;
 }
 
-.perfect-datetimepicker{
+.perfect-datetimepicker {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #ddd;
@@ -297,10 +308,10 @@ button:hover {
 
 
 .banner_continue_btn span {
-  transition: all linear 0.2s;
+    transition: all linear 0.2s;
 }
 
-.datePicker{
+.datePicker {
     position: absolute;
     width: 365px;
     right: 0;
@@ -314,46 +325,46 @@ button:hover {
     display: none;
     padding-top: 15px;
 
-    
+
 }
 
-.datePickers{
-  position: absolute;
-  width: 365px;
-  right: 0;
-  top: 0;
-  border-radius: 5px;
-  background: #fff;
-  z-index: 99;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
-  display: none;
-  
+.datePickers {
+    position: absolute;
+    width: 365px;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 99;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
+    display: none;
+
 }
 
-.datePickers .calender_time h3{
-  padding: 3px 0;
+.datePickers .calender_time h3 {
+    padding: 3px 0;
 }
 
-.pageTwo .calender_time h3{
-  padding: 3px 0;
+.pageTwo .calender_time h3 {
+    padding: 3px 0;
 }
 
-.returnBook{
-  display: none;
+.returnBook {
+    display: none;
 }
 
 
-.choose{
+.choose {
     padding: 20px 5px;
     text-align: left;
 }
 
-.choose button{
+.choose button {
     border: 0;
     background: #ddd;
-    font-family: 'open sans',sans-serif;
+    font-family: 'open sans', sans-serif;
     font-size: 18px;
     padding: 12px 40px;
     margin: 0 15px;
@@ -361,17 +372,17 @@ button:hover {
     border-radius: 5px;
 }
 
-#later_btn{
+#later_btn {
     background: #009FE3;
     color: #fff;
 }
 
-.timing_part{
+.timing_part {
     background: #FAFAFA;
     border-top: 1px solid #ddd;
 }
 
-.calender_time{
+.calender_time {
     padding: 4px 5px;
     box-sizing: border-box;
     transform: translateY(-15px);
@@ -379,13 +390,13 @@ button:hover {
     float: right;
 }
 
-.calender_time ul li{
+.calender_time ul li {
     text-align: center;
     padding-bottom: 4px;
 }
 
 #hour_box,
-#minBox{
+#minBox {
     width: 100%;
     border: 1px solid #ddd;
     margin-right: 5px;
@@ -396,7 +407,7 @@ button:hover {
 }
 
 #date-text2,
-#date-text3{
+#date-text3 {
     height: 1px;
     background: green;
     position: absolute;
@@ -406,7 +417,7 @@ button:hover {
 }
 
 
-#demo2{
+#demo2 {
     transform: translateY(-39px);
     width: 260px;
     float: left;
@@ -414,49 +425,50 @@ button:hover {
     margin-top: 24px;
 }
 
-#demo3{
-  transform: translateY(-39px);
-  width: 260px;
-  float: left;
-  z-index: 999;
-  margin-top: 24px;
+#demo3 {
+    transform: translateY(-39px);
+    width: 260px;
+    float: left;
+    z-index: 999;
+    margin-top: 24px;
 }
 
-.returnDate{
-  display: none;
+.returnDate {
+    display: none;
 }
 
-.perfect-datetimepicker *{
+.perfect-datetimepicker * {
     line-height: 26px;
 }
-.perfect-datetimepicker table td{
+
+.perfect-datetimepicker table td {
     border: 1px solid #ddd;
 }
 
 .calender_time h3 {
-	color: #333;
-	font-family: 'Open Sans',sans-serif;
-	font-size: 22px;
-	padding: 10px 0;
-	font-weight: bold;
-	text-align: center;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
 }
 
 
 .calender_time .d-flex button {
-	width: 100%;
-	padding: 5px 0;
-	background: transparent;
-	border: 1px solid #ddd;
-	background: #333;
-	color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    background: transparent;
+    border: 1px solid #ddd;
+    background: #333;
+    color: #fff;
 }
 
-.calender_time .d-flex{
-  flex-direction: column;
+.calender_time .d-flex {
+    flex-direction: column;
 }
 
-#cancel_btn{
+#cancel_btn {
     background: #707070;
     border: 0;
     padding: 6px 12px;
@@ -464,75 +476,81 @@ button:hover {
     border-radius: 5px;
     font-size: 18px;
 }
-#cancel_btn:hover{
+
+#cancel_btn:hover {
     background: #FA4832;
 }
 
-#cancel_btns{
-  background: #707070;
-  border: 0;
-  padding: 6px 12px;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 18px;
+#cancel_btns {
+    background: #707070;
+    border: 0;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
 }
-#cancel_btns:hover{
-  background: #FA4832;
+
+#cancel_btns:hover {
+    background: #FA4832;
 }
 
 #ok_btn {
-	background: #323232;
-	border: 0;
-	padding: 6px 33px;
-	color: #fff;
-	border-radius: 5px;
-	font-size: 18px;
+    background: #323232;
+    border: 0;
+    padding: 6px 33px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
-#ok_btns{
-  background: #043F9A;
-border: 0;
-padding: 6px 33px;
-color: #fff;
-border-radius: 5px;
-font-size: 18px;
+#ok_btns {
+    background: #043F9A;
+    border: 0;
+    padding: 6px 33px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
 }
-.ok{
+
+.ok {
     opacity: 0;
     visibility: hidden;
 }
 
-.okCancel{
-  text-align: center;
+.okCancel {
+    text-align: center;
 
-transform: translateY(-21px);
+    transform: translateY(-21px);
 }
 
 
-.mt{
+.mt {
     display: none !important;
 }
 
-.title{
+.title {
     pointer-events: none;
 }
-#asap_btn:hover{
+
+#asap_btn:hover {
     background: #009FE3;
     color: #fff;
 }
 
-.clear{
+.clear {
     display: none;
 }
+
 .perfect-datetimepicker tbody td.today {
-	font-weight: bold;
-	color: #fff;
-	border: 1px solid #828282;
-	background-color: #828282;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #828282;
+    background-color: #828282;
 }
+
 .perfect-datetimepicker tbody td.selected {
-	border: 1px solid #333;
-	background-color: #333;
+    border: 1px solid #333;
+    background-color: #333;
 }
 
 
@@ -543,11 +561,11 @@ transform: translateY(-21px);
     suggetion css start
 ============*/
 .suggest_list {
-	position: absolute;
-	background: #fff;
-	width: 100%;
-	display: none;
-	z-index: 9999;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    display: none;
+    z-index: 9999;
 }
 
 .suggest_list.suggetion_active {
@@ -565,9 +583,11 @@ transform: translateY(-21px);
 .down_btn i {
     transition: all .3s linear;
 }
-.cal_down_btns i{
+
+.cal_down_btns i {
     transition: all .3s linear;
 }
+
 .cal_down_btns.rotate_btn i,
 .down_btn.rotate_btn i {
     transform: rotate(180deg);
@@ -589,11 +609,11 @@ transform: translateY(-21px);
 }
 
 .suggest_lists {
-	position: absolute;
-	background: #fff;
-	width: 100%;
-	display: none;
-	z-index: 9999;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    display: none;
+    z-index: 9999;
 }
 
 .suggest_lists.suggetion_actives {
@@ -783,10 +803,12 @@ transform: translateY(-21px);
     text-align: center;
     line-height: 50px;
 }
+
 /* slide buttons */
 .slider_tab {
-	position: relative;
+    position: relative;
 }
+
 .slide-buttons button {
     width: 40px;
     height: 40px;
@@ -796,20 +818,23 @@ transform: translateY(-21px);
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) ;
-    -webkit-transform: translateY(-50%) ;
-    -moz-transform: translateY(-50%) ;
-    -ms-transform: translateY(-50%) ;
-    -o-transform: translateY(-50%) ;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
-.slide-buttons .left_arrow{
+
+.slide-buttons .left_arrow {
     left: 15px;
     z-index: 9999;
 }
-.slide-buttons .right_arrow{
+
+.slide-buttons .right_arrow {
     right: 15px;
     z-index: 9999;
 }
+
 /*=================
     sm-carpart css
 =================*/
@@ -902,8 +927,8 @@ transform: translateY(-21px);
 
 
 #coyright-part {
-	background: #222222;
-	padding: 14px 0;
+    background: #222222;
+    padding: 14px 0;
 }
 
 .reserved p {
